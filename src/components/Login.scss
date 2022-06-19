@@ -1,0 +1,40 @@
+.loginWrapper{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    background-image: url("../../public/bck.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @media(max-width:600px){
+        background-position: bottom;
+        background-size: 100% 30%;
+    }
+    .loginHeader{
+        color: #7ba7f4;
+        @media(max-width:600px){
+            text-align: center;
+        }
+    }
+    .buttonsContainer{
+        max-width: 40vw;
+        margin-top: 20vh;
+        @media(max-width:600px){
+            max-width: 80vw;
+            margin: 5rem auto;
+        }
+        .loginBtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .facebookBtn{
+            background-color: #4267B2;
+        }
+        .googleBtn{
+            background-color: white;
+            color: black;
+            border: 1px solid lightgray;
+        }
+    }
+}
